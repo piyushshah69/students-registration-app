@@ -37,8 +37,8 @@ const handleDelete = (studentId) => {
     studentList = newStudentList;
     const stringifiedStudentList = JSON.stringify(studentList);
     localStorage.setItem("students", stringifiedStudentList);
-    if (studentList.length > 0) {
-        table.style.display = "table";
+    if (studentList.length == 0) {
+        table.style.display = "none";
     }
     addStudentsData();
 };
