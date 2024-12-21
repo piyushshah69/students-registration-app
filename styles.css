@@ -56,6 +56,17 @@ input:read-only{
     color: grey;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
 #submit-btn{
     min-width: 10%;
     cursor: pointer;
@@ -76,7 +87,7 @@ input:read-only{
     display: flex;
     justify-content: center;
     max-height: 400px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 table{

@@ -136,6 +136,7 @@ const handleSave = () => {
     emailInput.value = "";
     numberInput.value = null;
     table.style.display = "table";
+    studentIdInput.removeAttribute("readOnly")
 }
 
 // This function handles click on submit button
